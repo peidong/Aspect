@@ -20,7 +20,7 @@ public class AspectOne
 //        System.out.println(joinPoint.getArgs()[0]);
 //        System.out.println("=======before end=======");
 //    }
-    @After("@annotation(com.xqc.xplan.xspart.aop.annotation.BuryingPoint)")
+    @AfterReturning("@annotation(com.xqc.xplan.xspart.aop.annotation.BuryingPoint)")
     public void after(JoinPoint joinPoint)
     {
         System.out.println("=======AspectOne after start=======");
